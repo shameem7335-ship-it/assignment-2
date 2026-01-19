@@ -34,7 +34,8 @@ body{
 .btn{
     width: 135px;
     border-radius: 30px;
-    background-color: #F7E93F;
+    color: #ffffff;
+    background: linear-gradient(to right,#F7E93F, #FB09B4,#9100F8);
     gap: 5px;
 display: flex;
 align-items: center;
@@ -319,6 +320,27 @@ max-width: 1200px;
   align-items: center;
   width: 30px;
   } 
-  
+  footer{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #ffffff;
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+  }
+    footer h1{
+        font-size: 48px;
+        font-weight: bold;
+    }
+  footer a {
+   text-decoration: none;
+   margin: 0 30px;
+   color: #ffffff;
+   align-items: center;
+
+  }
    
-    
+    footer p{
+        margin-top: 50px;
+    }
