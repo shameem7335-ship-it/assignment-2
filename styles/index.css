@@ -122,3 +122,129 @@ gap: 4px;
     text-align: center;
     margin: 0 auto;
 }
+.podcast .podcast-container .about h1{
+    color: #ffff;
+    font-size: 48px;
+    font-weight: bold;
+}
+.podcast .podcast-container .about p{
+    color: #ffff;
+    font-size: 16px;
+    line-height: 20px;
+}
+.podcast .podcast-container .summery{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 120px;
+}
+.podcast .podcast-container .summery h1{
+  color: #00FF88;
+}
+.podcast .podcast-container .summery p{
+  color: #ffffff;
+}
+.why{
+ /* border: 1px solid #230E3D;  */
+    text-align: center;
+     background-color: #230E3D ;
+   
+    
+}
+.why .why-container {
+ padding-top: 70px;
+gap: 40px;
+color: #ffffff;
+display: grid;
+place-items: center;
+
+
+}
+.why .why-container .card .card-1{
+    grid-area: card-1;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #2c0e50;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    text-align: start;
+    border: none;
+}
+.why .why-container .card .card-2{
+    grid-area: card-2;
+     border-radius: 8px;
+    color: #ffffff;
+    background-color: #320e5a;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    text-align: start;
+    border: none;
+}
+
+.why .why-container .card .card-3{
+    grid-area: card-3;
+     border-radius: 8px;
+    color: #ffffff;
+    background-color: #320e5a;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    text-align: start;
+    border: none;
+}
+
+
+.why .why-container .card .card-4{
+    grid-area: card-4;
+     border-radius: 8px;
+    color: #ffffff;
+    background-color: #320e5a;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    text-align: start;
+    border: none;
+
+}
+.why .why-container .card .card-5{
+    grid-area: card-5; border-radius: 8px;
+    color: #ffffff;
+    background-color: #320e5a;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    text-align: start;
+    border: none;
+}
+
+
+.why .why-container .card{
+   
+max-width: 1200px;
+ margin-bottom: 100px;
+   display: grid;
+   
+   
+   gap: 30px;
+   grid-template-areas: 
+   "card-1 carrd-2 card-2"
+   "card-1 card-3 card-3"
+   "card-4 carrd-4 card-5"
+}
+
