@@ -1,0 +1,124 @@
+
+
+
+
+body{
+    max-width: 1660px;
+ background-color: #1A0B2E;
+}
+
+.navbar{
+    background-color: #1A0B2E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tech{
+    color: aliceblue;
+}
+.wave{
+  color:#F7E93F ;}
+/* }#F7E93F, #FB09B4,#9100F8; */
+.nav-menu a{
+    text-decoration: none;
+    color: #ffff;
+}
+.nav-menu {
+   
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    
+    gap: 30px;
+}
+.btn{
+    width: 135px;
+    border-radius: 30px;
+    background-color: #F7E93F;
+    gap: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+white-space: nowrap;
+padding: 10px;
+
+}
+.hero{
+    background-image: url(../assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.hero .hero-container{
+    
+    width: 550px;
+    height: 558px;
+    
+   
+}
+.hero .hero-container .double-img{
+    position: relative;
+}
+.hero .hero-container .double-img .relative{
+    height: 350px;
+    width: 350px;
+    
+}
+.hero .hero-container .double-img .absolute{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+   top:69px;
+   right: 175px;
+}
+.hero .hero-container h1{
+    width: ;
+    color: #ffff;
+}
+.hero .hero-container p{
+    width: ;
+    color: #ffff;
+}
+.hero .hero-container .button{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.hero .hero-container .button .button2{
+    color: #00FF88;
+    background: none;
+    border: 1px solid #00FF88;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: 4px;
+}
+.hero .hero-container .double-img .new{
+    background-color: #00FF88;
+    color: black;
+    width: 75px;
+    border-radius: 30px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 12px;
+    right: 90px;
+}
+
+   
+.podcast{
+ background-color: #1A0B2E;
+ margin-top: 0px;
+}
+.podcast-container{
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
