@@ -17,7 +17,11 @@ body{
     color: aliceblue;
 }
 .wave{
-  color:#F7E93F ;}
+background: linear-gradient(to right, #F7E93F, #FB09B4,#9100F8 );
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+ 
 /* }#F7E93F, #FB09B4,#9100F8; */
 .nav-menu a{
     text-decoration: none;
@@ -330,12 +334,15 @@ max-width: 1200px;
     background-size: cover;
   }
     footer h1{
-        font-size: 48px;
+        font-size: 80px;
         font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 0;
     }
   footer a {
    text-decoration: none;
    margin: 0 30px;
+   
    color: #ffffff;
    align-items: center;
 
