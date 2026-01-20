@@ -2,11 +2,20 @@
 
 
 
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 body{
     max-width: 1660px;
  background-color: #1A0B2E;
 }
-
+p{
+    opacity: 0.6;
+}
 .navbar{
     background-color: #1A0B2E;
     display: flex;
@@ -35,6 +44,9 @@ background: linear-gradient(to right, #F7E93F, #FB09B4,#9100F8 );
     
     gap: 30px;
 }
+.navbar .img{
+            display: none;
+        }
 .btn{
     width: 135px;
     border-radius: 30px;
@@ -166,7 +178,7 @@ place-items: center;
 }
 .why .why-container .card .card-1{
     grid-area: card-1;
-    border-radius: 8px;
+    border-radius: 20px;
     color: #ffffff;
     background-color: #2c0e50;
    
@@ -180,7 +192,7 @@ place-items: center;
 }
 .why .why-container .card .card-2{
     grid-area: card-2;
-     border-radius: 8px;
+     border-radius: 20px;
     color: #ffffff;
     background-color: #320e5a;
    
@@ -195,7 +207,7 @@ place-items: center;
 
 .why .why-container .card .card-3{
     grid-area: card-3;
-     border-radius: 8px;
+     border-radius: 20px;
     color: #ffffff;
     background-color: #320e5a;
  
@@ -211,7 +223,7 @@ place-items: center;
 
 .why .why-container .card .card-4{
     grid-area: card-4;
-     border-radius: 8px;
+     border-radius: 20px;
     color: #ffffff;
     background-color: #320e5a;
     
@@ -225,7 +237,8 @@ place-items: center;
 
 }
 .why .why-container .card .card-5{
-    grid-area: card-5; border-radius: 8px;
+    grid-area: card-5;
+     border-radius: 20px;
     color: #ffffff;
     background-color: #320e5a;
    
@@ -255,11 +268,47 @@ max-width: 1200px;
 .feature{
     text-align: center;
     color: #ffffff;
-    padding: 60px 200px;
+    padding: 60px 200px;}
+    
+
+   
+    
+
+.feature .featured .videos .v-1{
+    width: 380px;
+    text-align: start;
+    background-color:#2c0e50 ;
+  margin-right: 15px;
+    border-radius: 20px;
 }
+.feature .featured .videos .v-1 iframe{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   height: 200px;
+  
+}
+    
+.feature .featured .videos .v-1 .hh{
+  padding: 20px; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.feature .featured .videos .v-1 .pp{
+  padding: 20px; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.feature .featured .videos .v-1 .duration{
+  padding: 20px; 
+  color: #00FF88;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .feature .featured .videos{
    display: flex;
-   justify-content: center;
+   justify-content: center
     gap: 10px;
   background-color: #1A0B2E;
   border-radius: 10px;
@@ -282,7 +331,7 @@ max-width: 1200px;
     margin-left: 20px;
 }
 .feature .host .meet .name .social{
-    display: flex;
+    display: flex
 }
 .feature .host .meet .name .social .li{
     border: 1px solid slateblue;
@@ -339,10 +388,17 @@ max-width: 1200px;
         margin-bottom: 10px;
         margin-top: 0;
     }
+    footer .anchor{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
   footer a {
+   display: flex;
+   gap: 8px;
    text-decoration: none;
    margin: 0 30px;
-   
+   vertical-align: middle;
    color: #ffffff;
    align-items: center;
 
@@ -351,3 +407,83 @@ max-width: 1200px;
     footer p{
         margin-top: 50px;
     }
+
+
+
+
+     @media screen and (max-width: 576px){
+        .nav-menu {
+            display: none;
+        }
+        .navbar .btn{
+            display: none;
+        }
+       .navbar .img{
+         display: block;
+        }
+        .hero .hero-container .double-img{
+    position: relative;
+}
+.hero .hero-container .double-img .absolute{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+   top:22%;
+   right: 30%;
+}
+
+
+
+.podcast{
+    display: none;
+}
+       
+ .why .why-container .card{
+    padding: 20px;
+    display: grid;
+     grid-template-areas:
+     "card-1"
+     "card-2"
+     "card-3"
+     "card-4"
+     "card-5"
+     ;
+ }
+.feature{
+    padding: 10px;
+}
+.feature .host .meet img{
+    width: 50%;
+    margin: 0 auto;
+}
+.feature .featured .videos , .feature .host .meet{
+    flex-direction: column;
+    gap: 15px;
+}
+.feature .host .meet .name{
+    text-align: center;
+}
+.feature .host .meet .name .social{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background: url(../assets/footer-bg.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    
+   
+  }
+}
+
+  footer .anchor{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+   
+    gap: 10px;
+    
+
+ }
+     }
