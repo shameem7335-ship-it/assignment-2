@@ -92,6 +92,29 @@ padding: 10px;
     position: absolute;
    top:69px;
    right: 175px;
+  
+}
+.hero .hero-container .double-img .absolute:hover{
+    
+   transform: rotate(360deg); 
+   transition: transform 5s;
+   
+}
+@keyframes zoom {
+    0%{
+      transform: scale(1)
+    }
+    50%{
+      transform: scale(1.25)
+    }
+    100%{
+      transform: scale(1)
+    }
+    
+}
+.new{
+    animation: zoom 3s infinite ease-in-out ;
+    
 }
 .hero .hero-container h1{
     width: ;
