@@ -60,6 +60,16 @@ white-space: nowrap;
 padding: 10px;
 
 }
+.btn:hover{
+    transform: scale(1.10);
+    transition: transform 2s;
+    cursor: pointer;
+}
+.button2:hover{
+    transform: scale(1.10);
+    transition: transform 2s;
+    cursor: pointer;
+}
 .hero{
     background-image: url(../assets/hero-bg.png);
     background-position: center;
@@ -113,7 +123,7 @@ padding: 10px;
     
 }
 .new{
-    animation: zoom 3s infinite ease-in-out ;
+    animation: zoom 4s infinite ease-in-out ;
     
 }
 .hero .hero-container h1{
@@ -432,7 +442,7 @@ max-width: 1200px;
     }
 
 
-
+/* media queri for small device */
 
      @media screen and (max-width: 576px){
         .nav-menu {
@@ -443,6 +453,7 @@ max-width: 1200px;
         }
        .navbar .img{
          display: block;
+         cursor: pointer;
         }
         .hero .hero-container .double-img{
     position: relative;
@@ -457,10 +468,22 @@ max-width: 1200px;
 
 
 
-.podcast{
-    display: none;
+.podcast .summery{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding: 0 30px;
+   
 }
-       
+  .podcast-container{
+    text-align: start;
+    width: 100%;
+    margin: 0 auto;
+    
+   }  
+    .podcast-container .about{
+        margin-left: 20px;
+    }   
  .why .why-container .card{
     padding: 20px;
     display: grid;
@@ -477,18 +500,21 @@ max-width: 1200px;
 }
 .feature .host .meet img{
     width: 50%;
-    margin: 0 auto;
+    align-items: left;
 }
 .feature .featured .videos , .feature .host .meet{
     flex-direction: column;
     gap: 15px;
 }
+.feature .featured .videos{
+    margin-left: 20px;
+}
 .feature .host .meet .name{
-    text-align: center;
+    text-align: left;
 }
 .feature .host .meet .name .social{
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 footer{
     background: url(../assets/footer-bg.png);
@@ -501,9 +527,9 @@ footer{
 
 
   footer .anchor{
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
    
     gap: 10px;
     
